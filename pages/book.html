@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link rel="stylesheet" href="/css/booking/index.css">
+    <link rel="stylesheet" href="/css/booking/form.css">
+    <link rel="shortcut icon" href="/public/img/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <section class="booking_form">
+        
+        <div class="outer_form">
+            <div class="form_image">
+                <div class="overlay"></div>
+            </div>
+            <div class="booking_info">
+                <h2>Hotel Reservation Form</h2>
+                <p>Please complete the form below</p>
+            </div>
+            <p id="verify">Your registration will be verify prior to your arrival</p>
+            <div class="form">
+                <form action="#" method="post">
+                    <!-- name -->
+                    <fieldset class="name">
+                        <label for="text">Full Name</label>
+                       <div class="names">
+                         <div class="first_name">
+                            <input type="text" name="text" id="text" placeholder="Joe" required>
+                            <p>First Name</p>
+                        </div>
+                        <div class="second_name">
+                            <input type="text" name="text" id="text" placeholder="Smith" required>
+                            <p>Second Name</p>
+                        </div>
+                       </div>
+                    </fieldset>
+                    <!-- address -->
+                     <fieldset class="address">
+                        <label for="address">Address</label>
+                        <div class="address_info">
+                            <div class="line1">
+                                <input type="text" name="addres" id="line1" placeholder="John street, Califonia" required>
+                            <p>Street Address </p>
+                            </div>
+                            <div class="line1">
+                                <input type="text" name="addres" id="line1" placeholder="John street, Califonia" required>
+                            <p>Street Address Line 2 </p>
+                            </div>
+                            <div class="city_state">
+                                <div class="city_province">
+                                    <input type="text" name="text" id="city" required placeholder="London">
+                                    <p>City</p>
+                                </div>
+                                <div class="city_province">
+                                    <input type="text" name="text" id="state" required placeholder="Vietna">
+                                    <p>State/Province</p>
+                                </div>
+                            </div>
+                            <div class="postal">
+                                <input type="text" name="postal" id="postal" required placeholder="23456701">
+                                <p>Postal/Zip Code</p>
+                            </div>
+                        </div>
+                     </fieldset>
+                     <!-- phone number -->
+                      <fieldset class="phone">
+                        <label for="contact">Phone Number</label>
+                        <input type="tel" name="contact" id="contact" placeholder="+123 456 7890" required>
+                      </fieldset>
+                      <!-- email -->
+                       <fieldset class="email">
+                        <label for="email">Email Address</label>
+                        <div class="email_ex">
+                            <input type="email" name="email" id="email" placeholder="ex:myname@example.com" required>
+                            <p>example@example.com</p>
+                        </div>
+                       </fieldset>
+
+                       <!-- arrival-date and time -->
+                        <fieldset class="arrival">
+                            <label for="arrival">Arrival - Date and Time</label>
+                            <div class="date_minutes">
+                                <div class="date">
+                                    <input type="date" name="arrival" id="arrival" required placeholder="YYYY-MM-DD">
+                                    <p>Date</p>
+                                </div>
+                                <div class="time">
+                                    <input type="time" name="time" id="time" required placeholder="HH:MM">
+                                    <p>Hours Minutes</p>
+                            </div>
+
+                            </div>
+                        </fieldset>
+
+                        <!-- departure-date and time -->
+                        <fieldset class="arrival">
+                            <label for="arrival">Departure - Date and Time</label>
+                            <div class="date_minutes">
+                                <div class="date">
+                                    <input type="date" name="arrival" id="arrival" required placeholder="YYYY-MM-DD">
+                                    <p>Date</p>
+                                </div>
+                                <div class="time">
+                                    <input type="time" name="time" id="time" required placeholder="HH:MM">
+                                    <p>Hours Minutes</p>
+                            </div>
+
+                            </div>
+                        </fieldset>
+
+                        <!-- adults -->
+                         <fieldset class="adults">
+                            <label for="adults">Number of Adults</label>
+                            <input type="text" name="text" id="adults" placeholder="ex:23" required>
+                         </fieldset>
+                            <!-- children -->
+                         <fieldset class="adults">
+                            <label for="adults">Number of Kids (if there are any)</label>
+                            <input type="text" name="text" id="adults" placeholder="ex:23" required>
+                         </fieldset>
+
+                         <!-- payment -->
+                            <fieldset class="payment">
+                                <label for="payment">Payment Method</label>
+                                <div class="check_paypal">
+                                    <div class="innerpayment">
+                                        <input type="radio" name="payment" id="card" required>
+                                        <label for="card">Check</label>
+                                    </div>
+                                    <div class="innerpayment">
+                                        <input type="radio" name="payment" id="card" required>
+                                        <label for="card">Paypal</label>
+                                    </div>
+                                </div>
+                                <div class="paypal"></div>
+                            </fieldset>
+
+                            <!-- request -->
+                             <fieldset class="request">
+                                <label for="request">Special Requests</label>
+                                <textarea name="request" id="request" cols="30" rows="5" placeholder="Type here..."></textarea>
+                             </fieldset>
+
+                             <!-- submit -->
+                                <div class="submit">
+                                    <input type="submit" value="Submit">
+                                </div>
+
+                                <!-- home -->
+                                <div class="home">
+                                    <a href="/">Return to Home</a>
+                                </div>
+                </form>
+            </div>
+            <div class="image"></div>
+        </div>
+        <div class="outer_overlay"></div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,23 @@
+.image_section{
+    width: 100%;
+    min-height: 80vh;
+    /* background-color: tomato; */
+    padding: 0 2.5em 0 2.5em;
+    margin-bottom: 2em;
+}
+.image_section .img{
+    width: 100%;
+    min-height: 80vh;
+    background-image: url(/public/img/info_page.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+@media screen and (max-width:430px){
+    .image_section{
+    min-height: 50vh;
+}
+    .image_section .img{
+    min-height: 50vh;
+}
+}

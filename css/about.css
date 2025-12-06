@@ -1,0 +1,46 @@
+.About{
+    width: 100%;
+    min-height: 40vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 2.5em 2em 2.5em;
+    /* background-color: white; */
+     /* background-color: #e6e4e4; */
+     /* overflow: hidden; */
+} 
+.About article{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+ article h3{
+    width: 400px;
+    line-height: 130%;
+    letter-spacing: 3%;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: left;
+    /* padding: 1rem; */
+    /* text-align-last: justify; */
+} 
+
+/* screen check */
+@media (max-width:760px){
+    .About{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+} 
+.About article{
+    width: 100%;
+    align-items: center;
+    padding: 1.5rem;
+}
+article h3{
+    font-size: 1.2rem;
+    width: 100%;
+   
+} 
+}

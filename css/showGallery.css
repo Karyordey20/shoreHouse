@@ -1,0 +1,100 @@
+.show_gallery{
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    /* background-color: blue; */
+    margin-top: 0px;
+    padding: 5em 2.5em 2em 2.5em;
+}
+.show_gallery .main_heading{
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #e6e4e4;
+}
+.main_heading .sub_heading{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.sub_heading h3{
+    letter-spacing: -2%;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 110%;
+}
+.sub_heading p{
+    font-size: 1.7rem;
+    color: #555;
+    line-height: 150%;
+}
+
+.show_gallery .image_carosoul{
+    width: 100%;
+    min-height: 50vh;
+   background-color: #e6e4e4;
+   padding: 1.5em 0em ;
+   overflow: hidden;
+}
+.image_carosoul .gallery_inner{
+   width: fit-content;
+    display: flex;
+    flex-direction: row;
+    gap:40px;
+    animation: scroll 20s linear infinite;
+
+}
+
+ .gallery_inner .imgs{
+    width: 200px; 
+    height: 20vh;
+    margin-top: 3rem; 
+}
+.gallery_inner .imgs #img_big{
+    width: 100%;
+    min-height: 100%; 
+    object-fit: cover;
+}
+.imgs #img_big img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.gallery_inner .imgss{
+   width: 200px; 
+    height: 20vh;
+    /* background-color: rgb(16, 192, 16); */
+}
+.gallery_inner .imgss #img_small{
+    width: 100%;
+    height: 100%;
+    /* background-color: rgb(231, 19, 19); */
+}
+.imgss #img_small img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.image_carosoul p{
+    font-size: .9rem;
+}
+/* transitioning */
+
+@keyframes scroll {
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-50%);
+    }
+}
+
+/* media screen */
+@media (max-width:708px){
+     .gallery_inner .imgs{
+    width: 200px; 
+    height: 20vh;
+    margin-top: 2rem; 
+}
+}

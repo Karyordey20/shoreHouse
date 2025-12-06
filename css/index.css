@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow-x: hidden; */
+}
+body{
+    font-family:Roboto, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #dad5d5;
+    
+}
+.navigation{
+    position: fixed;
+    top: -5px;
+    right: 0;
+    left: 0;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f5f5f5;
+    /* padding: 1rem 2rem; */
+    padding-left: 2rem;
+    padding-right: 0;
+    z-index: 3;
+}
+.mobile_navigation{
+    display: none;
+}
+/* .navigation p{
+    padding: 2rem;
+    background-color: yellow;
+} */
+.navigation p a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    /* color: #333; */
+    color: #E5CBAD;
+}
+/* navigation lists */
+.navigation ul{
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    /* border-left: 1px solid #ccc; */
+}
+.navigation ul li{
+    height: 10vh;
+    /* background-color: red; */
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    border-left: 1px solid #000;
+    text-align: center;
+    align-content: center;
+}
+.navigation ul li a{
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+    font-family: Roboto, sans-serif;
+}
+.navigation ul li a:hover{
+    color: #007BFF;
+}
+/* ************ */
+#book{
+    background-color: black;
+    
+}
+#book:hover{
+    background-color: #333;
+    /* transition: all 0.3s ease; */
+}
+#book a{
+    color: #f5f5f5;
+}
+#book a:hover{
+    color: #007BFF;
+}
+

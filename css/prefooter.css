@@ -1,0 +1,74 @@
+.prefooter{
+    width: 100%;
+    height: 80vh;
+     background-color: green;
+    background-position: center;
+    position: relative;
+    /*background-image: url("/public/img/prefooter.jpg");
+    background-position: 100% ;
+    background-size: contain;
+    background-repeat: no-repeat; */
+}
+.prefooter img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+.prefooter .overlay{
+    position: absolute;
+    background-color: black;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: .4;
+}
+.prefooter .get_access{
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    right: 0;
+    /* background-color: hotpink; */
+    padding-left: 1.5rem;
+    color: white;
+    display: grid;
+    gap: 25px;
+}
+.get_access h2{
+    width: 100%;
+    line-height: 110%;
+    font-size: .7em;
+    letter-spacing: -2%;
+    font-family:Roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.get_access h3{
+    width: 100%;
+    line-height: 110%;
+    font-weight: 400;
+    font-size: 2.5em;
+}
+
+.get_access button{
+    width: 200px;
+    background-color: rgb(10, 8, 8);
+    border-radius: 3em;
+    padding: 1em;
+   border: none;
+    transition:  0.3s ease-in-out all;;
+}
+
+.get_access button a{
+    font-size: 1.5em;
+    text-decoration: none;
+    color: rgb(241, 238, 238);
+     transition: color 0.3s ease;;
+}
+.get_access button:hover{
+    background-color: #E5CBAD;
+}
+.get_access button a:hover{
+    color: #040505;
+    font-weight: bold;
+    /* transition: .5 ease-in all; */
+}

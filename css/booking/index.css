@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow-x: hidden; */
+    color: black;
+}
+body{
+    font-family:Roboto, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* background-color: #c02828; */
+    
+}
+
+.booking_form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(239, 240, 239);
+    padding: 0;
+    /* image is coming here */
+    /* background-image: url(/public/img/yeom-gm-t0FYeksVDUE-unsplash.jpg); */
+    background-position: center;
+    background-size: cover;
+}
+
+/* .booking_form .outer_form{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 60%;
+    min-height: 100vh; 
+     background-color: red; 
+    margin-top: 0;
+    z-index: 2;
+} */
+.form_image{
+    width: 100%;
+    min-height: 30vh;
+    background-image: url(/public/img/jeet-dhanoa-FINwOwYNTvI-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.form_image .overlay{
+    width: 100%;
+    min-height: 30vh;
+    background-color: black;
+    opacity: .2;
+}
+.booking_info{
+    display: flex;
+    flex-direction: column;
+    gap: .4em;
+    width: 100%;
+    margin-top: 1em;
+}
+.booking_info h2{
+    width: 100%;
+    text-align: center;
+    line-height: 110%;
+    letter-spacing: 2%;
+}
+.booking_form p{
+    width: 100%;
+    text-align: center;
+    line-height: 110%;
+    letter-spacing: 2%;
+}
+#verify{
+    margin-top: 1.3em;
+      line-height: 110%;
+    letter-spacing: 2%;
+    margin-bottom: 2em;
+}
+
+/* small screen */
+@media screen and (max-width:759px){
+    /* .booking_form{
+    min-height: 260vh;
+   
+} */
+    
+}
+
+@media screen and (max-width:600px){
+    .booking_form .outer_form{
+    width: 100%;
+    
+}
+    #verify{
+        padding: 0 .9em;
+    }
+}

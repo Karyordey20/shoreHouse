@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow-x: hidden; */
+}
+body{
+    font-family:Roboto, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white;
+    /* background-color: #dad5d5; */
+    
+}
+.navigation{
+    position: fixed;
+    top: -5px;
+    right: 0;
+    left: 0;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #f5f5f5; */
+    background-color: white;
+    /* padding: 1rem 2rem; */
+    padding-left: 2rem;
+    padding-right: 0;
+    border-bottom: 1px solid black;
+    z-index: 3;
+}
+.mobile_navigation{
+    display: none;
+}
+/* .navigation p{
+    padding: 2rem;
+    background-color: yellow;
+} */
+.navigation p a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    /* color: #333; */
+    color: #E5CBAD;
+}
+/* navigation lists */
+.navigation ul{
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    /* border-left: 1px solid #ccc; */
+}
+.navigation ul li{
+    height: 10vh;
+    /* background-color: red; */
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    border-left: 1px solid #000;
+    text-align: center;
+    align-content: center;
+}
+.navigation ul li a{
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+    font-family: Roboto, sans-serif;
+}
+.navigation ul li a:hover{
+    color: #007BFF;
+}
+/* ************ */
+#book{
+    background-color: black;
+    
+}
+#book:hover{
+    background-color: #333;
+    /* transition: all 0.3s ease; */
+}
+#book a{
+    color: #f5f5f5;
+}
+#book a:hover{
+    color: #007BFF;
+}
+
+.post_nav{
+   width: 100%;
+   min-height: 10rem; 
+   /* background-color: green; */
+   margin-top: 3rem;
+   padding-left: 2rem;
+   align-content: end;
+   padding-bottom: 1.5rem;
+}
+.post_nav h1{
+    font-size: 3.5em;
+    font-weight: 300;
+    line-height: 110%;
+    letter-spacing: 5%;
+    font-family:Roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
